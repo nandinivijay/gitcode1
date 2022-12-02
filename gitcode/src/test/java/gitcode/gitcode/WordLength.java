@@ -1,15 +1,24 @@
 package gitcode.gitcode;
 
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 public class WordLength {
-	public static void main(String args[])
-	{
-		WordLength obj = new WordLength();
-		System.out.println("Wordlength" + obj.wordlength("Hello"));
-		
-	}
+	
 	int wordlength(String word)
 	{
 		return word.length();
 	}
 
+	
+	
+	
+	@Test
+	public void testCase1() {
+		String input = "Hello";
+		int output = wordlength(input);
+		Assert.assertEquals(output, 5);	
+		}
+
+	
 }
