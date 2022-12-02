@@ -5,11 +5,14 @@ public class WordLength {
 	{
 		WordLength obj = new WordLength();
 		System.out.println("Wordlength" + obj.wordlength("Hello"));
-		
+		System.out.println("sum of the numbers" + obj.sum_of_two_numbers(1, 2));
 	}
 	int wordlength(String word)
 	{
 		return word.length();
 	}
-
+	int sum_of_two_numbers( int number1, int number2)
+	{
+		return number1+number2;
+	}
 }
