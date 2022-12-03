@@ -8,10 +8,7 @@ public class WordLength {
 	int wordlength(String word)
 	{
 		return word.length();
-	}
-
-	
-	
+	}	
 	
 	@Test
 	public void testCase1() {
